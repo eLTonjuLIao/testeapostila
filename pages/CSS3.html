@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/sytle.css">
+</head>
+
+<body>
+
+    <header>
+
+        <!--NavBar-->
+
+        <nav class="navbar navbar-expand-lg navbar-success bg-success">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button><a href="/index.html">
+                    <img src="/img/2.png" alt="logo do site" class="ImgNav">
+                </a>
+                <a class="navbar-brand" href="/index.html">Quattro</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/pages/HTML5.html">HTML5</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/CSS3.html">CSS3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/JavaScript.html">JavaScript</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/GIT.html">GIT</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+
+    <main>
+        <div class="container">
+
+        <h1><strong>Introdução ao CSS3</strong></h1>
+
+        <p>CSS é a linguagem que usamos para estilizar uma página da Web.</p>
+
+        <h3><strong>O que é CSS?</strong></h3>
+
+        <ul>
+            <li>
+                CSS significa Cascading Style SheetsHTML significa Hyper Text Markup Language
+            </li>
+            <li>
+                CSS descreve como os elementos HTML devem ser exibidos na tela, papel ou em outra mídia
+            </li>
+            <li>
+                CSS economiza muito trabalho. Ele pode controlar o layout de várias páginas da web de uma só vez
+            </li>
+            <li>
+                As folhas de estilo externas são armazenadas em arquivos CSS
+            </li>
+            <li>
+                Elementos HTML informam ao navegador como exibir o conteúdo
+            </li>
+        </ul>
+
+        <h3><strong>Por que usar CSS?</strong></h3>
+        <p>CSS é usado para definir estilos para suas páginas da web, incluindo design, layout e variações de exibição
+            para diferentes dispositivos e tamanhos de tela.</p>
+<div class="codeview">
+        <pre>
+            <code>
+                body {
+                    background-color: lightblue;
+                }
+                
+                h1 {
+                  color: white;
+                  text-align: center;
+                }
+                
+                p {
+                  font-family: verdana;
+                  font-size: 20px;
+                }
+            </code>
+        </pre>
+    </div>
+    
+section
+        <h3><strong>Sintaxe CSS</strong></h3>
+        <p>Uma regra CSS consiste em um seletor e um bloco de declaração.</p>
+        <span>
+            <mark>h1</mark>
+        </span>
+        
+        
+        <span>
+            <mark>{color:blue; font-size:12px;}</mark>
+        </span>
+        <br>
+        <span>Seletor</span>
+        <span>
+            <mark>
+                h1
+            </mark>
+        </span>
+
+        <span>
+            Declaração
+        </span>
+        <span>
+            
+            <mark>
+                {color:blue; font-size:12px;}
+            </mark>
+        
+        </span>
+
+
+
+        <span>Propriedade</span>
+        <span>
+            
+            <mark>
+                color:
+            </mark>
+        
+        </span>
+
+        <span>
+            
+            <mark>
+                font-size:
+            </mark>
+
+        </p>
+
+        <p>Valor</p>
+        <p>
+            <mark>
+                blue;
+            </mark>
+        </p>
+
+
+        <p>
+            <mark>
+                12px;
+            </mark>
+        </p>
+
+        <p>
+            O seletor aponta para o elemento HTML que você deseja estilizar.
+        </p>
+        <p>
+            O bloco de declaração contém uma ou mais declarações separadas por ponto e vírgula.
+        </p>
+        <p>
+            Cada declaração inclui um nome de propriedade CSS e um valor, separados por dois pontos.
+        </p>
+        <p>
+            Várias declarações CSS são separadas por ponto e vírgula e os blocos de declaração são cercados por chaves.
+        </p>
+    
+        <div class="codeview">
+
+            <pre class="exempcode">
+                <code>
+                    <p>
+                    EXEMPLO <br>
+                    Neste exemplo, todos os elementos <code>&lt;p&gt;</code>
+                    serão alinhados ao centro, com uma cor de texto vermelha:
+                    </p>
+                    <p>
+                        p {
+                            color: red;
+                            text-align: center;
+                        }
+                    
+                    </p>
+                </code>
+            </pre>
+        </div>
+
+
+    </div>
+
+
+    </main>
+
+
+    <footer>
+
+        <header>
+            <p class="titfoot">2019 - © Quattro Edtech todos os direitos reservados.</p>
+        </header>
+        <ul class="listfoot">
+            <a href="#">
+                <li>Whatsapp</li>
+            </a>
+            <a href="#">
+                <li>Instagram</li>
+            </a>
+            <a href="#">
+                <li>Youtube</li>
+            </a>
+            <a href="#">
+                <li>Linkedin</li>
+            </a>
+        </ul>
+
+
+    </footer>
+
+</body>
+
+</html>

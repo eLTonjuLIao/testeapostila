@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/sytle.css">
+</head>
+
+<body>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+  <header>
+
+    <!--NavBar-->
+
+    <nav class="navbar navbar-expand-lg navbar-success bg-success">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button><a href="/index.html">
+          <img src="/img/2.png" alt="logo do site" class="ImgNav">
+        </a>
+        <a class="navbar-brand" href="/index.html">Quattro</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/pages/HTML5.html">HTML5</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/CSS3.html">CSS3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/JavaScript.html">JavaScript</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/GIT.html">GIT</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+
+  <main class="html">
+
+
+
+    <h1 class="TituloPag"><strong>HTML</strong></h1>
+    <h1><strong>HTML</strong> para Iniciantes</h1>
+    <p>HTML (Hyper Text Markup Language) é o código que você usa para estruturar uma página web e seu conteúdo.<br> Por
+      exemplo, o conteúdo pode ser estruturado em parágrafos, em uma lista com marcadores ou usando imagens e
+      tabelas.<br> Como o título sugere, este artigo fornecerá uma compreensão básica do HTML e suas funções.</p>
+
+    <h2>Afinal, o que é <strong>HTML?</strong></h2>
+    <p>HTML não é uma linguagem de programação; é uma linguagem de marcação, usada para definir a estrutura do seu
+      conteúdo. HTML consiste de uma série de elementos, que você usa para delimitar ou agrupar diferentes partes do
+      conteúdo para que ele apareça ou atue de determinada maneira. As tags anexas podem transformar uma palavra ou
+      imagem num hiperlink, pode colocar palavras em itálico, pode aumentar ou diminuir a fonte e assim por diante. Por
+      exemplo, veja a seguinte linha de conteúdo:</p>
+
+    <h2><strong>Estrutura Simples de Um Documento HTML</strong></h2>
+    <div class="container">
+      <div class="codeview">
+        <pre>
+      <code>
+        <p class="textocod">
+
+      &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+          &lt;head&gt;
+                &lt;title&gt;Título da Página&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Meu Primeiro Cabeçalho&lt;/h1&gt;
+                &lt;p&gt;Meu Primeiro Parágrafo.&lt;/p&gt;
+            &lt;/body&gt;
+        &lt;/html&gt;
+      </p>
+      </code>
+    </pre>
+
+        <button class="btn btn-light" id="btncopiar"><strong>Copiar</strong></button>
+        <script>
+          const btn = document.querySelector('#btncopiar');
+          const textocod = document.querySelector('.textocod');
+
+          btn.addEventListener('click', copiaTexto);
+
+          function copiaTexto(e) {
+
+            navigator.clipboard.writeText(textocod.innerText);
+
+          }
+
+        </script>
+
+
+      </div>
+    </div>
+
+    <div class="htmlexpli">
+      <h2><strong>Explicação</strong></h2>
+
+      <ul>
+        <li>A &lt;!DOCTYPE html&gt; declaração define que este documento é um documento HTML5</li>
+        <li>O &lt;html&gt; é o elemento raiz de uma página HTML</li>
+        <li>O &lt;head&gt; elemento contém informações meta sobre a página HTML</li>
+        <li>O &lt;title&gt; elemento especifica um título para a página HTML (que é mostrado na barra de título do
+          navegador ou na guia da página)</li>
+        <li>O &lt;body&gt; elemento define o corpo do documento e é um recipiente para todos os conteúdos visíveis, como
+          títulos, parágrafos, imagens, hiperlinks, tabelas, listas, etc.</li>
+        <li>O &lt;h1&gt; elemento define um título grande</li>
+        <li>O &lt;p&gt; elemento define um parágrafo</li>
+      </ul>
+
+      <h2>O que é um elemento HTML?</h2>
+      <p>Um elemento HTML é definido por uma tag inicial, algum conteúdo e uma tag final:</p>
+      <p class="exemptags">
+        < tagname> O conteúdo vai aqui... < /tagname>
+      </p>
+      <p><strong> O elemento</strong> HTML é tudo, desde a tag inicial até a tag final:</p>
+
+      <p class="exemptags">
+        < h1> Meu primeiro cabeçalho < /h1> <br>
+            < p> Meu primeiro parágrafo. < /p>
+      </p>
+
+    </div>
+
+    <section class="videoaula">
+
+      <header>
+        <h1>
+          <strong>Assista a Vídeo-Aula</strong>
+        </h1>
+      </header>
+
+      <main>
+
+        <iframe width="600" height="500" src="https://www.youtube.com/embed/3oSIqIqzN3M?autoplay=1&mute=1&controls=0"
+          title="Aprendendo HTML5" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+
+      </main>
+
+    </section>
+
+    <section>
+
+      <div class="paginacao">
+
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item ">
+              <a class="page-link" href="/index.html">Previous</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="/pages/CSS3.html">Next</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <footer>
+
+    <header>
+      <p class="titfoot">2019 - © Quattro Edtech todos os direitos reservados.</p>
+    </header>
+    <ul class="listfoot">
+      <a href="#">
+        <li>Whatsapp</li>
+      </a>
+      <a href="#">
+        <li>Instagram</li>
+      </a>
+      <a href="#">
+        <li>Youtube</li>
+      </a>
+      <a href="#">
+        <li>Linkedin</li>
+      </a>
+    </ul>
+
+
+</body>
+
+</html>
