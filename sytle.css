@@ -64,9 +64,7 @@ body{
 .codeview p{
     margin-right: 100px;
 }
-.exempcode{
-    
-}
+
 .exempCss{
     background-color: rgb(79,79,79);
    font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -84,13 +82,15 @@ body{
 }
 
 mark{
-    display: flex;
-    width: 10%;
+    display: inline-block;
+    flex-direction: row;
+    width: 150px;
     background-color: #00FF00;
     color: aliceblue;
     justify-content: space-between;
-    
-    
+      
+}
+span{
     
 }
 
